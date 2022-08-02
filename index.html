@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="calculadora.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js"></script>
+
+    <title>Operadores php</title>
+</head>
+<body>
+
+    <form name="calculador" id="calculadora" action="https://jorgearmandosb.000webhostapp.com/Operadores_PHP_29_07_2022/api.php" method="post" data-operador>
+       <h1>Calculadora</h1>
+       
+
+       <input type="text" name="ans"  value="" readonly>
+       <br>
+       <input type="button" value="1" onclick="document.calculador.ans.value+='1'">
+       <input type="button" value="2" onclick="document.calculador.ans.value+='2'">
+       <input type="button" value="3" onclick="document.calculador.ans.value+='3'">
+       <input type="button" name="suma" value="+" onclick="document.calculador.ans.value+='+'">
+       <br>
+       <input type="button" value="4" onclick="document.calculador.ans.value+='4'">
+       <input type="button" value="5" onclick="document.calculador.ans.value+='5'">
+       <input type="button" value="6" onclick="document.calculador.ans.value+='6'">
+       <input type="button" name="resta" value="-" onclick="document.calculador.ans.value+='-'">
+       <br>
+       <input type="button" value="7" onclick="document.calculador.ans.value+='7'">
+       <input type="button" value="8" onclick="document.calculador.ans.value+='8'">
+       <input type="button" value="9" onclick="document.calculador.ans.value+='9'">
+       <input type="button" name="multiplicar" value="x" onclick="document.calculador.ans.value+='*'">
+       <br>
+       <input type="reset" value="C">
+       <input type="button" value="0" onclick="document.calculador.ans.value+='0'">
+       <input type="button" name="dividir" value="÷" onclick="document.calculador.ans.value+='/'">
+       <input type="submit" name="igual" value="=" onclick="document.calculador.ans.value=eval (document.calculador.ans.value)">  
+        <br>
+
+       <div id="resultado" class="rta">
+        
+    </div>
+    </form>
+
+    
+    
+    
+    
+
+
+    
+    <div id="resultado">
+        
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- 
+    <label>Ingrese el numero 1</label>
+        <input name="num1" type="number" required>
+        <label>Ingrese el numero 2</label>
+        <input name="num2" type="number" required>
+        <div>
+            <button value="suma">+</button>
+            <button value="resta">-</button>
+        </div>
+        <input type="submit" value="Calcular"> -->
+</body>
+</html>
