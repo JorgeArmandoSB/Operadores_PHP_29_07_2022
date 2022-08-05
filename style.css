@@ -47,7 +47,7 @@ form{
 
 input[type=text]{
     width: 74%;
-    padding: 30px 24px;
+    padding: 40px 24px;
     border-radius: 12px;
     color: #fff;
     outline: none;
@@ -60,6 +60,7 @@ input[type=text]{
 }
 
 
+
 input[type=button], input[type=submit], input[type=reset]{
     background-color: #051937;
     color: #fff;
@@ -69,7 +70,7 @@ input[type=button], input[type=submit], input[type=reset]{
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    margin: 7px 3px;
+    margin: 7px 20px;
     min-width: 16%;
     cursor: pointer;
     transition: .5s;
@@ -80,9 +81,44 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
     background-color: #79b6ff; 
 }
 
+
+
+
 .rta{
+    display: flex;
     text-align: center;
-    width: 90%;
+    width: 70%;
     font-size: 1rem;
     margin: 20px auto;
+    
 }
+
+
+button{
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 20px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 7px 20px;
+    min-width: 16%;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+
+button:hover{
+    background-color: #051937; 
+}
+
+input[type=submit]{
+    background-color: #b55705;
+    border-radius:30px;
+    padding: 25px 20px;
+
+}
+

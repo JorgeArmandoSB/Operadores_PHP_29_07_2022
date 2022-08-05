@@ -13,36 +13,46 @@
 </head>
 <body>
 
-    <form name="calculador" id="calculadora" action="https://jorgearmandosb.000webhostapp.com/Operadores_PHP_29_07_2022/api.php" method="post" data-operador>
+    <form id="calculadora" action="https://jorgearmandosb.000webhostapp.com/Operadores_PHP_29_07_2022/api.php" method="post" data-operador>
        <h1>Calculadora</h1>
        
-
-       <input type="text" name="ans"  value="" readonly>
-       <br>
-       <input type="button" value="1" onclick="document.calculador.ans.value+='1'">
-       <input type="button" value="2" onclick="document.calculador.ans.value+='2'">
-       <input type="button" value="3" onclick="document.calculador.ans.value+='3'">
-       <input type="button" name="suma" value="+" onclick="document.calculador.ans.value+='+'">
-       <br>
-       <input type="button" value="4" onclick="document.calculador.ans.value+='4'">
-       <input type="button" value="5" onclick="document.calculador.ans.value+='5'">
-       <input type="button" value="6" onclick="document.calculador.ans.value+='6'">
-       <input type="button" name="resta" value="-" onclick="document.calculador.ans.value+='-'">
-       <br>
-       <input type="button" value="7" onclick="document.calculador.ans.value+='7'">
-       <input type="button" value="8" onclick="document.calculador.ans.value+='8'">
-       <input type="button" value="9" onclick="document.calculador.ans.value+='9'">
-       <input type="button" name="multiplicar" value="x" onclick="document.calculador.ans.value+='*'">
-       <br>
-       <input type="reset" value="C">
-       <input type="button" value="0" onclick="document.calculador.ans.value+='0'">
-       <input type="button" name="dividir" value="÷" onclick="document.calculador.ans.value+='/'">
-       <input type="submit" name="igual" value="=" onclick="document.calculador.ans.value=eval (document.calculador.ans.value)">  
+        <div id="numeros">
+       <input type="text" name="screen"   >
+ 
         <br>
+       <input type="button" value="1">
+       <input type="button" value="2">
+       <input type="button" value="3">
+       
+       <br>
+       <input type="button" value="4">
+       <input type="button" value="5">
+       <input type="button" value="6">
+       <br>
+       <input type="button" value="7">
+       <input type="button" value="8">
+       <input type="button" value="9">
+       <br>
+       <input type="button" value="0">
+       <input type="button" value="00">
+       <input type="button" value=".">
 
+        </div>
+        
+       <button value="suma">+</button>
+       <button value="resta">-</button>
+       <button value="multiplicacion">*</button>
+       <br>
+
+       <button value="divicion">/</button>
+       <button value="">C</button>
+       <input type="submit" value="=">  
+    
+        <br>
        <div id="resultado" class="rta">
         
     </div>
+        
     </form>
 
     
